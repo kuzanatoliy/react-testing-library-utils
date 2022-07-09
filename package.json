@@ -1,0 +1,25 @@
+{
+  "name": "react-testing-library-utils",
+  "version": "1.0.0",
+  "description": "The utils package for react testing library",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuzanatoliy/react-testing-library-utils.git"
+  },
+  "keywords": [
+    "react",
+    "react-testing-library",
+    "tests",
+    "jest"
+  ],
+  "author": "njkznu@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuzanatoliy/react-testing-library-utils/issues"
+  },
+  "homepage": "https://github.com/kuzanatoliy/react-testing-library-utils#readme"
+}
