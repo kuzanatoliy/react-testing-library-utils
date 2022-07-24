@@ -60,12 +60,16 @@
     // "sourceRoot": "",
     "stripInternal": false,
 
+    // JavaScript support
+    "allowJs": true,
+    "checkJs": true,
+    // "maxNodeModuleJsDepth": 0,
+
     "lib": ["es2020"],
     "target": "es2020",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowJs": true
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src/**/*"],
   "exclude": ["**/*.spec.ts"]
