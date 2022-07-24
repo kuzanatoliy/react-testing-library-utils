@@ -65,6 +65,10 @@
     "checkJs": true,
     // "maxNodeModuleJsDepth": 0,
 
+    // Editor support
+    "disableSizeLimit": false,
+    "plugins": [],
+
     "lib": ["es2020"],
     "target": "es2020",
     "esModuleInterop": true,
