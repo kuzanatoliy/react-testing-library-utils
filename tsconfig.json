@@ -108,6 +108,14 @@
     "listFiles": false,
     "traceResolution": false,
 
+    // Projects
+    // "composite": "",
+    "disableReferencedProjectLoad": false,
+    "disableSolutionSearching": false,
+    "disableSourceOfProjectReferenceRedirect": false,
+    "incremental": false,
+    // "tsBuildInfoFile": "",
+
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
