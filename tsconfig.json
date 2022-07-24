@@ -99,6 +99,15 @@
     "target": "es2020",
     "useDefineForClassFields": true,
 
+    // Compiler Diagnostics
+    "diagnostics": false,
+    "explainFiles": false,
+    "extendedDiagnostics": false,
+    "generateCpuProfile": "profile.cpuprofile",
+    "listEmittedFiles": false,
+    "listFiles": false,
+    "traceResolution": false,
+
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
