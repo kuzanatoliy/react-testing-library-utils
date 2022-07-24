@@ -76,6 +76,15 @@
     "isolatedModules": false,
     "preserveSymlinks": false,
 
+    // Backwards Compatibility
+    // "charset": "",
+    "keyofStringsOnly": false,
+    "noImplicitUseStrict": false,
+    "noStrictGenericChecks": false,
+    // "out": "",
+    "suppressExcessPropertyErrors": false,
+    "suppressImplicitAnyIndexErrors": false,
+
     "lib": ["es2020", "dom"],
     "target": "es2020",
     "skipLibCheck": true
