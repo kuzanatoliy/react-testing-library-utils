@@ -85,8 +85,20 @@
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
 
+    // Language and Environment
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
+    // "jsxImportSource": "react",
     "lib": ["es2020", "dom"],
+    "moduleDetection": "auto",
+    "noLib": false,
+    // "reactNamespace": "React",
     "target": "es2020",
+    "useDefineForClassFields": true,
+
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
