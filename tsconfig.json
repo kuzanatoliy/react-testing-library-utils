@@ -21,8 +21,21 @@
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": true,
 
+    // modules
+    "allowUmdGlobalAccess": false,
+    "baseUrl": "src",
+    "module": "ES2022",
+    "moduleResolution": "classic",
+    "moduleSuffixes": [".ts, .tsx"],
+    "noResolve": false,
+    "paths": {},
+    "resolveJsonModule": false,
+    "rootDir": "src",
+    "rootDirs": [],
+    "typeRoots": ["./node_modules/@types"],
+    "types": [],
+
     "lib": ["es2020"],
-    "module": "commonjs",
     "target": "es2020",
     "esModuleInterop": true,
     "skipLibCheck": true,
