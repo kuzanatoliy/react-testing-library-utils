@@ -116,6 +116,11 @@
     "incremental": false,
     // "tsBuildInfoFile": "",
 
+    // Output Formatting
+    "noErrorTruncation": false,
+    "preserveWatchOutput": false,
+    "pretty": true,
+
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
