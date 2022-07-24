@@ -25,8 +25,8 @@
     "allowUmdGlobalAccess": false,
     "baseUrl": "src",
     "module": "ES2022",
-    "moduleResolution": "classic",
-    "moduleSuffixes": [".ts, .tsx"],
+    "moduleResolution": "node",
+    "moduleSuffixes": [".ts", ".tsx", ""],
     "noResolve": false,
     "paths": {},
     "resolveJsonModule": false,
@@ -38,7 +38,7 @@
     // Emit
     "declaration": true,
     "declarationDir": "types",
-    "declarationMap": true,
+    "declarationMap": false,
     "downlevelIteration": false,
     "emitBOM": false,
     "emitDeclarationOnly": false,
@@ -53,7 +53,7 @@
     "noEmitOnError": false,
     "outDir": "dist",
     // "outFile": "index.js",
-    "preserveConstEnums": false,
+    "preserveConstEnums": true,
     "preserveValueImports": false,
     "removeComments": true,
     "sourceMap": false,
@@ -69,11 +69,16 @@
     "disableSizeLimit": false,
     "plugins": [],
 
-    "lib": ["es2020"],
+    // Interop constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "preserveSymlinks": false,
+
+    "lib": ["es2020", "dom"],
     "target": "es2020",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["**/*.spec.ts"]
