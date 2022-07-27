@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // type checking
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "alwaysStrict": true,
@@ -21,112 +20,25 @@
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": true,
 
-    // modules
-    "allowUmdGlobalAccess": false,
     "baseUrl": "src",
     "module": "ES2022",
     "moduleResolution": "node",
-    "moduleSuffixes": [".ts", ".tsx", ""],
     "noResolve": false,
-    "paths": {},
     "resolveJsonModule": false,
     "rootDir": "src",
-    "rootDirs": [],
-    "typeRoots": ["./node_modules/@types"],
-    "types": [],
-
-    // Emit
     "declaration": true,
     "declarationDir": "types",
-    "declarationMap": false,
-    "downlevelIteration": false,
-    "emitBOM": false,
-    "emitDeclarationOnly": false,
-    "importHelpers": false,
-    "importsNotUsedAsValues": "remove",
-    "inlineSourceMap": false,
-    "inlineSources": false,
-    // "mapRoot": "dist",
     "newLine": "LF",
-    "noEmit": false,
-    "noEmitHelpers": false,
-    "noEmitOnError": false,
     "outDir": "dist",
-    // "outFile": "index.js",
-    "preserveConstEnums": true,
-    "preserveValueImports": false,
     "removeComments": true,
-    "sourceMap": false,
-    // "sourceRoot": "",
-    "stripInternal": false,
-
-    // JavaScript support
     "allowJs": true,
     "checkJs": true,
-    // "maxNodeModuleJsDepth": 0,
-
-    // Editor support
-    "disableSizeLimit": false,
-    "plugins": [],
-
-    // Interop constraints
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": false,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": false,
-    "preserveSymlinks": false,
-
-    // Backwards Compatibility
-    // "charset": "",
     "keyofStringsOnly": false,
-    "noImplicitUseStrict": false,
-    "noStrictGenericChecks": false,
-    // "out": "",
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-
-    // Language and Environment
-    "emitDecoratorMetadata": false,
-    "experimentalDecorators": false,
-    "jsx": "react",
-    "jsxFactory": "React.createElement",
-    "jsxFragmentFactory": "React.Fragment",
-    // "jsxImportSource": "react",
     "lib": ["es2020", "dom"],
-    "moduleDetection": "auto",
-    "noLib": false,
-    // "reactNamespace": "React",
     "target": "es2020",
-    "useDefineForClassFields": true,
-
-    // Compiler Diagnostics
-    "diagnostics": false,
-    "explainFiles": false,
-    "extendedDiagnostics": false,
-    "generateCpuProfile": "profile.cpuprofile",
-    "listEmittedFiles": false,
-    "listFiles": false,
-    "traceResolution": false,
-
-    // Projects
-    // "composite": "",
-    "disableReferencedProjectLoad": false,
-    "disableSolutionSearching": false,
-    "disableSourceOfProjectReferenceRedirect": false,
-    "incremental": false,
-    // "tsBuildInfoFile": "",
-
-    // Output Formatting
-    "noErrorTruncation": false,
-    "preserveWatchOutput": false,
-    "pretty": true,
-
-    // Completeness
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-
-    // Watch Options
-    "assumeChangesOnlyAffectDirectDependencies": true
+    "skipLibCheck": true
   },
   "include": ["src/**/*"],
   "exclude": ["**/*.spec.ts"]
