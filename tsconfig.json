@@ -121,6 +121,8 @@
     "preserveWatchOutput": false,
     "pretty": true,
 
+    // Completeness
+    "skipDefaultLibCheck": true,
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
