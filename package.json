@@ -4,8 +4,9 @@
   "description": "The utils package for react testing library",
   "main": "index.ts",
   "scripts": {
+    "clean-artifacts": "node utils/clean.js",
     "build": "tsc",
-    "test": "test"
+    "build:local": "yarn run clean-artifacts && yarn run build"
   },
   "repository": {
     "type": "git",
