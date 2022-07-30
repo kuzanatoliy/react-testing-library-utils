@@ -1,5 +1,5 @@
 {
-  "name": "react-testing-library-utils",
+  "name": "@react-testing-utils/testing-library-react",
   "version": "1.0.0",
   "description": "The utils package for react testing library",
   "main": "index.ts",
@@ -24,8 +24,9 @@
     "url": "https://github.com/kuzanatoliy/react-testing-library-utils/issues"
   },
   "homepage": "https://github.com/kuzanatoliy/react-testing-library-utils#readme",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
+    "@testing-library/react": "^13.0.0",
+    "react": "^18.0.0",
     "typescript": "^4.7.4"
   }
 }
