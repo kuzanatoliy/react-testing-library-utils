@@ -2,7 +2,6 @@
   "name": "@react-testing-utils/testing-library-react",
   "version": "1.0.0",
   "description": "The utils package for react testing library",
-  "main": "index.ts",
   "scripts": {
     "clean-artifacts": "node utils/clean.js",
     "build": "tsc",
@@ -18,7 +17,15 @@
     "tests",
     "jest"
   ],
-  "author": "njkznu@gmail.com",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "author": "Anatoli Kuzmiankou <njkznu@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kuzanatoliy/react-testing-library-utils/issues"
