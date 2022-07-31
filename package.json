@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The utils package for react testing library",
   "scripts": {
+    "postinstall": "husky install",
     "clean-artifacts": "node utils/clean.js",
     "build": "tsc",
     "build:local": "yarn run clean-artifacts && yarn run build",
@@ -34,6 +35,7 @@
   "homepage": "https://github.com/kuzanatoliy/react-testing-library-utils#readme",
   "devDependencies": {
     "@testing-library/react": "^13.0.0",
+    "husky": "^8.0.1",
     "jest": "^28.1.3",
     "react": "^18.0.0",
     "ts-jest": "^28.0.7",
