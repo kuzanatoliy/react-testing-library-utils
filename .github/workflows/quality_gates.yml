@@ -1,8 +1,5 @@
-name: deploy
-on:
-  push:
-    branches:
-      - master
+name: Quality gates
+on: [push, pull_request]
 jobs:
   pipeline:
     runs-on: ubuntu-latest
