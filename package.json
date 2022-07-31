@@ -6,7 +6,7 @@
     "clean-artifacts": "node utils/clean.js",
     "build": "tsc",
     "build:local": "yarn run clean-artifacts && yarn run build",
-    "test": "jest --coverage"
+    "test": "jest src --coverage"
   },
   "repository": {
     "type": "git",
