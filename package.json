@@ -1,5 +1,5 @@
 {
-  "name": "@react-testing-utils/testing-library-react",
+  "name": "@kuzanatoliorg/testing-library-react_utils",
   "version": "1.0.0",
   "description": "The utils package for react testing library",
   "scripts": {
