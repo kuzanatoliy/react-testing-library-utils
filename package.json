@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "The utils package for react testing library",
   "scripts": {
-    "postinstall": "husky install",
     "clean-artifacts": "node utils/clean.js",
     "build": "tsc",
     "build:local": "yarn run clean-artifacts && yarn run build",
