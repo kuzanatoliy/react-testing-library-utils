@@ -30,6 +30,6 @@ jobs:
           git add -f dist types
           git rm -f -r .github .husky src utils .gitignore README.md tsconfig.json yarn.lock
       - name: publish
-        run: npm publish --access public
-        env:
-          NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
+        run: |
+          echo //registry.npmjs.org/:_authToken=${{secrets.NPM_ACCESS_TOKEN}}
+          npm publish --access public
