@@ -27,7 +27,6 @@
     "jsx": "react-jsx",
     "noResolve": false,
     "resolveJsonModule": false,
-    "rootDir": "src",
     "declaration": true,
     "declarationDir": "types",
     "newLine": "LF",
@@ -43,5 +42,5 @@
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
-  "exclude": ["**/*.spec.ts"]
+  "exclude": ["**/*.spec.ts", "**/*.spec.tsx", "**/*.test.ts", "**/*.test.tsx"]
 }
