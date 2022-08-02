@@ -24,7 +24,7 @@
     "module": "ES2022",
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "jsx": "react-jsx",
+    "jsx": "react",
     "noResolve": false,
     "resolveJsonModule": false,
     "declaration": true,
