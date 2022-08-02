@@ -1,5 +1,7 @@
 import type { ComponentType } from "react";
 import type { RenderOptions, RenderResult } from "@testing-library/react";
+
+import React from "react";
 import { render } from "@testing-library/react";
 
 export type BuildRenderFn = <T extends {}>(

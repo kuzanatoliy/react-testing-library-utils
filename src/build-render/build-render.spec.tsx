@@ -1,5 +1,7 @@
-import { buildRender } from "./build-render";
+import React from "react";
 import { render as renderSpy } from "@testing-library/react";
+
+import { buildRender } from "./build-render";
 
 jest.mock("@testing-library/react", () => ({
   render: jest.fn(),
