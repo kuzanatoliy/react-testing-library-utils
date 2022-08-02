@@ -21,7 +21,7 @@
     "useUnknownInCatchVariables": true,
 
     "baseUrl": "src",
-    "module": "ES2022",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "jsx": "react",
@@ -37,8 +37,7 @@
     "keyofStringsOnly": false,
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    "lib": ["es2020"],
-    "target": "es2020",
+    "target": "ESNext",
     "skipLibCheck": true
   },
   "include": ["src/**/*"],
