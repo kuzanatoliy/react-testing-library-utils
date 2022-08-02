@@ -1,6 +1,6 @@
 {
   "name": "@kuzanatoliorg/testing-library-react-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The utils package for react testing library",
   "scripts": {
     "clean-artifacts": "node utils/clean.js",
