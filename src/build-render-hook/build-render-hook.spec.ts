@@ -1,18 +1,17 @@
-import React from "react";
-import { render as renderSpy } from "@testing-library/react";
+import { renderHook as renderHookSpy } from "@testing-library/react";
 
-import { buildRender } from "./build-render";
+import { buildRenderHook } from "./build-render-hook";
 
 jest.mock("@testing-library/react", () => ({
-  render: jest.fn(),
+  renderHook: jest.fn().mockImplementation((func) => func()),
 }));
 
-describe("build-render", () => {
+describe("build-render-hook", () => {
   beforeEach(() => {
     jest.clearAllMocks();
   });
 
-  const ComponentSpy = jest.fn();
+  const useHookSpy = jest.fn();
 
   it.each`
     defaultProps          | defaultOptions            | props                   | options
@@ -22,15 +21,14 @@ describe("build-render", () => {
   `(
     "should check render builder",
     ({ defaultProps, defaultOptions, props, options }) => {
-      buildRender(ComponentSpy, defaultProps, defaultOptions)(props, options);
-      expect(renderSpy).toBeCalledTimes(1);
-      expect(renderSpy).toBeCalledWith(
-        <ComponentSpy {...defaultProps} {...props} />,
-        {
-          ...defaultOptions,
-          ...options,
-        }
-      );
+      buildRenderHook(useHookSpy, defaultProps, defaultOptions)(props, options);
+      expect(renderHookSpy).toBeCalledTimes(1);
+      expect(renderHookSpy).toBeCalledWith(expect.any(Function), {
+        ...defaultOptions,
+        ...options,
+      });
+      expect(useHookSpy).toBeCalledTimes(1);
+      expect(useHookSpy).toBeCalledWith({ ...defaultProps, ...props });
     }
   );
 });
