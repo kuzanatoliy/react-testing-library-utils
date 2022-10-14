@@ -1,6 +1,7 @@
 import type {
   RenderHookOptions,
-  ResultContainer,
+  RenderHookResult,
+  Renderer,
 } from "@testing-library/react-hooks";
 
 import { renderHook } from "@testing-library/react-hooks";
@@ -12,7 +13,7 @@ export type BuildRenderHookFn = <TProps extends {}, TResult = unknown>(
 ) => (
   props?: Partial<TProps>,
   options?: RenderHookOptions<TProps>
-) => ResultContainer<TResult>;
+) => RenderHookResult<TProps, TResult, Renderer<TProps>>;
 
 export const buildRenderHook: BuildRenderHookFn =
   (useHook, defaultProps, defaultOptions) => (props, options) =>
