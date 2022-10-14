@@ -1,8 +1,8 @@
-import { renderHook as renderHookSpy } from "@testing-library/react";
+import { renderHook as renderHookSpy } from "@testing-library/react-hooks";
 
 import { buildRenderHook } from "./build-render-hook";
 
-jest.mock("@testing-library/react", () => ({
+jest.mock("@testing-library/react-hooks", () => ({
   renderHook: jest.fn().mockImplementation((func) => func()),
 }));
 
