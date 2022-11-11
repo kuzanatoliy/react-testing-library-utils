@@ -21,4 +21,4 @@ jobs:
       - name: styles
         run: yarn run prettier:check
       - name: temp
-        run: echo ${{ contains(github.ref, 'feature_') }}
+        run: echo ${{ github.ref }}
