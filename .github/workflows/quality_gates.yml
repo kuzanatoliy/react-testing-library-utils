@@ -20,5 +20,3 @@ jobs:
         run: yarn run test
       - name: styles
         run: yarn run prettier:check
-      - name: temp
-        run: echo ${{ github }}
