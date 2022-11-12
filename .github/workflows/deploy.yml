@@ -1,8 +1,8 @@
 name: deploy
-#on:
-#  push:
-#    branches:
-#      - master
+on:
+  push:
+    branches:
+      - master
 jobs:
   pipeline:
     runs-on: ubuntu-latest
@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --global user.email "njkznu@gmail.com"
           git config --global user.name "kuzanatoliy"
-          npm version ${{ contains(github.ref, 'feature_') && 'minor' || 'patch'}}
+          npm version minor
           git push
           git push --tags
           git add -f dist types
